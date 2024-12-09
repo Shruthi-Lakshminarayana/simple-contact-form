@@ -1,59 +1,33 @@
-# SimpleContactForm
+# Contact Form with Admin Authentication and Data Management
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.3.
+## Overview
 
-## Development server
+This project is an Angular application that provides a contact form for users to submit their contact information and messages. It includes an admin authentication system that allows an admin to log in, view the submitted contact information in a tabular format, and perform actions such as deleting entries and generating a PDF of the contact list.
 
-To start a local development server, run:
+## Features
 
-```bash
-ng serve
-```
+- **Contact Form**: Users can submit their name, email, and message through a contact form with validation.
+- **Admin Authentication**: Admin can log in to view and manage submitted contacts.
+- **Contact List Management**: Admin can view, delete, and generate PDFs of the contact list.
+- **Data Persistence**: Uses `json-server` to simulate a backend server and store contact data in a JSON file (`db.json`).
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Technologies Used
 
-## Code scaffolding
+- **Angular**: Frontend framework for building the application.
+- **json-server**: Mock backend server to store and manage contact data.
+- **jsPDF**: Library to generate PDFs from the contact list.
+- **HTML/CSS**: Markup and styling for the application.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Project Structure
 
-```bash
-ng generate component component-name
-```
+- **`src/app/contact-form/contact-form.component.ts`**: TypeScript file containing the logic for the contact form, admin authentication, and data management.
+- **`src/app/contact-form/contact-form.component.html`**: HTML template for the contact form and contact list.
+- **`src/app/contact-form/contact-form.component.css`**: CSS file for styling the contact form and contact list.
+- **`db.json`**: JSON file used by `json-server` to store contact data.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Installation
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/your-username/your-repo.git
+   cd your-repo
